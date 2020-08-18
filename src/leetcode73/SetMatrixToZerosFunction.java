@@ -1,4 +1,4 @@
-package matrixToZeroes;
+package leetcode73;
 
 public class SetMatrixToZerosFunction {
 	public void setZeroes(int[][] matrix) {
@@ -31,7 +31,6 @@ public class SetMatrixToZerosFunction {
         }
         
         // Use the first row and column to know which row or column to turn to zero
-        // Checking the inside now
         for(int i = 1; i < m; i++){
             for(int j = 1; j < n; j++){
             	// Check the middle part if its zero, mark the first row and column to zero
@@ -60,7 +59,6 @@ public class SetMatrixToZerosFunction {
         }
         
         // Then flip the first column to zero if there was zero in the first row on the original 2D array 
-
         if(firstColumn){
             for(int i = 0; i < m; i++){
                 matrix[i][0] = 0;

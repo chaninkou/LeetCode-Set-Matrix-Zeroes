@@ -1,4 +1,4 @@
-package matrixToZeroes;
+package leetcode73;
 
 import java.util.Arrays;
 
